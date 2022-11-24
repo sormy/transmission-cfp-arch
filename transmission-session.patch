@@ -1,0 +1,11 @@
+--- transmission.org/libtransmission/session.c	2020-02-02 21:25:11.699640256 +0000
++++ transmission/libtransmission/session.c	2020-02-02 21:25:17.967782427 +0000
+@@ -931,7 +931,7 @@
+     if( tr_bencDictFindInt( settings, TR_PREFS_KEY_REVERIFY_TORRENTS, &i ) )
+         session->reverifyTorrents = ( i > 0 ) ? i : 0 ;
+     if( tr_bencDictFindInt( settings, TR_PREFS_KEY_CHEAT_MODE_DEFAULT, &i ) )
+-        session->cheatModeDefault = ( ( i == 0 ) && ( i < 5 ) ) ? i : 0 ;
++        session->cheatModeDefault = ( ( i >= 0 ) && ( i < 5 ) ) ? i : 0 ;
+     if( tr_bencDictFindInt( settings, TR_PREFS_KEY_STREAM_MODE_DEFAULT, &i ) )
+         session->streamModeDefault = ( ( i >= 0 ) && ( i < 5 ) ) ? i : 0 ;
+     if( tr_bencDictFindInt( settings, TR_PREFS_KEY_WEBSEED_MAX_CONNECT_FAILS, &i ) )

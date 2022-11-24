@@ -1,0 +1,19 @@
+diff -ur web-client-cfp.org/index.html web-client-cfp/index.html
+--- web-client-cfp.org/index.html	2020-02-06 02:28:55.597539842 +0000
++++ web-client-cfp/index.html	2020-02-06 02:31:06.764567428 +0000
+@@ -506,7 +506,6 @@
+ 					<option value="4">Streaming Forced</option>
+ 					</select>
+ 				</li>
+-<!--	deactivated always, for fun only see "deactivated always, comment out for fun" in announcer.c
+ 				<li id="cheatMode">
+ 					Announce Mode:
+ 					<select id="cheatModeSelect">
+@@ -518,7 +517,6 @@
+ 					</select>
+ 				</li>
+ 				<li class="separator"></li>
+--->
+ 				<li id="context_select_all" class="context_select_all">Select All</li>
+ 				<li id="context_deselect_all" class="context_deselect_all">Deselect All</li>
+ 			</ul>

@@ -1,0 +1,13 @@
+--- transmission.org/m4/glib-gettext.m4	2020-02-02 06:04:55.996224496 +0000
++++ transmission/m4/glib-gettext.m4	2020-02-02 06:05:04.940436748 +0000
+@@ -36,8 +36,8 @@
+ dnl try to pull in the installed version of these macros
+ dnl when running aclocal in the glib directory.
+ dnl
+-m4_copy([AC_DEFUN],[glib_DEFUN])
+-m4_copy([AC_REQUIRE],[glib_REQUIRE])
++m4_force_copy([AC_DEFUN],[glib_DEFUN])
++m4_force_copy([AC_REQUIRE],[glib_REQUIRE])
+ dnl
+ dnl At the end, if we're not within glib, we'll define the public
+ dnl definitions in terms of our private definitions.

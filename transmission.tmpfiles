@@ -1,0 +1,2 @@
+d /var/lib/transmission 0755 transmission transmission
+d /run/transmission 0755 transmission transmission
